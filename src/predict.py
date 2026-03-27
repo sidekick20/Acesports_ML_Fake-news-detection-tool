@@ -20,18 +20,14 @@ def clean_text(text):
     text = re.sub(r'[^a-z\s]', '', text)
     words = text.split()
     words = [w for w in words if w not in stop_words]
-    return " ".join(words)
+    return " ".join(words)  
 
-
-# 🔹 Prediction
 def predict_news(text):
     cleaned = clean_text(text)
     transformed = vectorizer.transform([cleaned])
-
     prediction = model.predict(transformed)[0]
     confidence = model.predict_proba(transformed).max()
-
-    return prediction, confidence
+    return prediction, confidence  
 
 
 # 🔹 Explainability (Top keywords)
