@@ -138,6 +138,12 @@ textarea:focus {
   gap: 6px;
 }
 .tag i { color: #94a3b8; }
+
+/* Colorful icons for different example types */
+.tag:nth-child(1) i { color: #f59e0b; } /* Clickbait - Orange */
+.tag:nth-child(2) i { color: #10b981; } /* Real News - Green */
+.tag:nth-child(3) i { color: #ef4444; } /* Rage Bait - Red */
+.tag:nth-child(4) i { color: #8b5cf6; } /* Pseudoscience - Purple */
 .tag:hover {
   background-color: #f1f5f9;
   border-color: #cbd5e1;
