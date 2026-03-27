@@ -63,4 +63,4 @@ Input a news headline or article → Model predicts **Real** or **Fake** with co
 
 ## License
 
-MIT License
+MIT License# Force redeploy
