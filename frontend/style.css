@@ -315,3 +315,52 @@ textarea:focus {
   margin-top: 2rem;
   line-height: 1.5;
 }
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.card {
+  backdrop-filter: blur(12px);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.result-box {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #4f46e5);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+.card::before {
+  background: linear-gradient(90deg, #2563eb, #4f46e5, #2563eb);
+  background-size: 200% 100%;
+  animation: slideLine 3s linear infinite;
+}
+
+@keyframes slideLine {
+  0% { background-position: 0% }
+  100% { background-position: 200% }
+}
