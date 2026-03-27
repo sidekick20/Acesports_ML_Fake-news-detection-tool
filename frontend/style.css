@@ -1,0 +1,220 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-box {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    box-shadow: none;
+}
+
+.brand-text h1 {
+    font-size: 1.75rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.brand-text p {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #eef2ff;
+    padding: 6px 14px;
+    border-radius: 99px;
+    border: 1px solid #e0e7ff;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #22c55e;
+    border-radius: 50%;
+}
+
+.badge-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4f46e5;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Card Section */
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.textarea-container {
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    resize: none;
+    font-size: 1rem;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.char-count {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+/* Examples Section */
+.examples-section {
+    margin-top: 1.5rem;
+}
+
+.example-label {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+
+    align-items: center;
+    gap: 6px;
+}
+.tag i{
+    color: #94a3b8;
+
+}
+
+.tag:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    flex-grow: 1;
+    background-color: #2563eb; /* Soft indigo as per image */
+    color: white;
+    border: none;
+    padding: 0.875rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    padding: 0.875rem 1.5rem;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #475569;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #5b7d9f;
+}
+
+/* Disclaimer */
+.disclaimer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
