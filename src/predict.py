@@ -1,6 +1,8 @@
 import pickle
 import re
 import nltk
+
+
 from nltk.corpus import stopwords
 
 # Download stopwords (only first time)
@@ -23,11 +25,20 @@ def clean_text(text):
     return " ".join(words)  
 
 def predict_news(text):
+    # Clean and preprocess text
     cleaned = clean_text(text)
-    transformed = vectorizer.transform([cleaned])
-    prediction = model.predict(transformed)[0]
-    confidence = model.predict_proba(transformed).max()
-    return prediction, confidence  
+
+    # Transform text to features
+    features = vectorizer.transform([cleaned])
+
+    # Make prediction
+    prediction = model.predict(features)[0]
+
+    # Get confidence (probability)
+    probabilities = model.predict_proba(features)[0]
+    confidence = max(probabilities)
+
+    return prediction, confidence
 
 
 # 🔹 Explainability (Top keywords)
