@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerifyAI - Fake News Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="brand">
+                <div class="logo-box">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>VerifyAI</h1>
+                    <p>Fake News Detection</p>
+                </div>
+            </div>
+            <div class="badge">
+                <span class="dot"></span>
+                <span class="badge-text">AI Powered</span>
+            </div>
+        </header>
+
+        <main class="card">
+            <div class="textarea-container">
+                <textarea placeholder="Paste news headline or article here..." maxlength="2000"></textarea>
+                <div class="char-count">0/2000</div>
+            </div>
+
+          <div class="examples-section">
+                <p class="example-label"><i class="fas fa-bolt text-blue-500"></i> Quick Test Examples</p>
+                <div class="tag-group">
+                    <button class="tag"><i class="fas fa-mouse-pointer"></i> Clickbait</button>
+                    <button class="tag"><i class="far fa-newspaper"></i> Real News</button>
+                    <button class="tag"><i class="fas fa-exclamation-triangle"></i> Rage Bait</button>
+                    <button class="tag"><i class="fas fa-flask"></i> Pseudoscience</button>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-primary"><i class="fas fa-microchip"></i> Run AI Analysis</button>
+                <button class="btn-secondary"><i class="fas fa-times"></i> Clear Input</button>
+            </div>
+        </main>
+
+        <footer class="disclaimer">
+            This tool uses heuristic analysis for demonstration purposes. Always verify news through multiple credible sources.
+        </footer>
+    </div>
+
+</body>
+</html>
